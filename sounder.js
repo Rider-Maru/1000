@@ -86,7 +86,7 @@ var lightLayer = document.getElementsByClassName('square-button');
     for (var i = 0; i < lightLayer.length; i++){
         lightLayer[i].style.opacity = val;
     }
-    //document.getElementById("debug_gain").textContent = val;
+    document.getElementById("debug_gain").textContent = val;
     requestAnimationFrame(draw);
 })();
 //-------------------------------------------
