@@ -20,7 +20,7 @@ var video = document.getElementById("video");
 var medias = { audio: false, video: {} };
 
 var mySwiper = new Swiper('.swiper-container', {
-    loop: true,
+    loop: false,
 });
 
 function finishAudioLoading() {
