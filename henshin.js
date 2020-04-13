@@ -91,10 +91,6 @@ function JudgeAutorize(value) {
     if (value < threshold) {
         if (!onAuthorize) {
             onAuthorize = true;
-            if (AutorizeNum == 3) {
-                
-                playSEMoveLever(onAuthorize);
-            }
             ringByCamera(1);
             document.getElementById("debug_bool").textContent = "true";
         }
@@ -117,9 +113,13 @@ function JudgeAutorize(value) {
 // ========================================
 function ring() {
     isAuthorizable = true;
-    AutorizeNum = 1;
-    playSECallKey(mySwiper.realIndex);
-    SEstandbyStop();
+    if (AutorizeNum == 2) {
+        playSECallKey(1)
+    } else {
+        AutorizeNum = 1;
+        playSECallKey(mySwiper.realIndex);
+        SEstandbyStop();
+    }
 }
 
 
@@ -130,7 +130,7 @@ function ringByCamera(callNum) {
     if (!isAuthorizable) return;
 
     if (callNum == 1 && AutorizeNum == 1) {
-        waitTime = 1000;
+        waitTime = 3000;
         isRing = true;
         onStandBy = true;
         //releaseCamera = false;
@@ -144,7 +144,7 @@ function ringByCamera(callNum) {
                 playSECallFunction(mySwiper.realIndex);
         }
         else if (AutorizeNum == 3) {
-            waitTime = 0;
+            waitTime = 2500;
             playSECallFinish(mySwiper.realIndex);
         }
     }
