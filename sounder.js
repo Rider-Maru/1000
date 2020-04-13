@@ -155,6 +155,7 @@ function playSECallKey(callNum) {
 }
 
 function playSECallFunction(callNum) {
+    stopSE();
     var num = 1 + callNum * 3;
     nowplaynumKey = num;
     console.log("Function" + num);
@@ -163,6 +164,7 @@ function playSECallFunction(callNum) {
 }
 
 function playSECallFinish(callNum) {
+    stopSE();
     var num = 2 + callNum * 3;
     nowplaynumCommon = null;
     nowplaynumKey = num;

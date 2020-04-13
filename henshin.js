@@ -9,7 +9,8 @@ var onAuthorize = false;
 
 var releaseCamera = true;
 
-
+var srcsKey = new Array("picture/key_sting_scorpion.png", "picture/key_dodo.png");
+var srcsKeyLight = new Array("picture/key_sting_scorpion_light.png", "picture/key_dodo_light.png");
 //var mySwiper.realIndex = 0;
 
 var threshold = 23;
@@ -117,6 +118,8 @@ function ring() {
         playSECallKey(1)
     } else {
         AutorizeNum = 1;
+        document.getElementById("key").src = srcsKey[0];
+        document.getElementById("key_light").src = srcsKeyLight[0];
         playSECallKey(mySwiper.realIndex);
         SEstandbyStop();
     }
@@ -134,6 +137,8 @@ function ringByCamera(callNum) {
         isRing = true;
         onStandBy = true;
         //releaseCamera = false;
+        document.getElementById("key").src = srcsKey[1];
+        document.getElementById("key_light").src = srcsKeyLight[1];
         playSEBelt(mySwiper.realIndex);
      }
     else if (callNum == 2) {
