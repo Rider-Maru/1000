@@ -95,15 +95,8 @@ var lightLayer = document.getElementsByClassName('square-button');
     bufferLoader = new BufferLoader(
         context,
         [
-            'audio/in.mp3',
+            'audio/zetsumetsuEvolution.mp3',
             'audio/standbyLoop.mp3',
-            'audio/finish.mp3',
-            'audio/distopia.mp3',
-            'audio/utopia.mp3',
-            'audio/close.mp3',
-            'audio/open.mp3',
-            'audio/inRock.mp3',
-            'audio/standbyLoopRock.mp3',
             'audio/nonSound.mp3',
         ],
         finishedLoading
@@ -120,21 +113,10 @@ function finishedLoading(bufferList) {
         bufferLoader = new BufferLoader(
             context,
             [
-                'audio/poison.mp3',
-                'audio/stingScopeon.mp3',
-                'audio/sting.mp3',
-                'audio/wing.mp3',
-                'audio/flyingFalcon.mp3',
-                'audio/flying.mp3',
-                'audio/dodo.mp3',
-                'audio/ansatsu.mp3',
-                'audio/zetsumetsu.mp3',
-                'audio/jump.mp3',
-                'audio/risingHopper.mp3',
-                'audio/rising.mp3',
-                'audio/kamenRider.mp3',
-                'audio/rockingHopper.mp3',
-                'audio/rocking_the_end.mp3',
+                'audio/thousandDriver.mp3',
+                'audio/presentedByZaia.mp3',
+                'audio/thousandDistraction.mp3',
+                'audio/breakHorn.mp3',
                 /*
                 'audio/.mp3',
                 'audio/.mp3',
