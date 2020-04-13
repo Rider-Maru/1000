@@ -9,8 +9,8 @@ var onAuthorize = false;
 
 var releaseCamera = true;
 
-var srcsKey = new Array("picture/key_sting_scorpion.png", "picture/key_dodo.png");
-var srcsKeyLight = new Array("picture/key_sting_scorpion_light.png", "picture/key_dodo_light.png");
+var srcsKey = new Array("picture/key_awaking_arsino.png", "picture/key_amazing_caucasus.png");
+var srcsKeyLight = new Array("picture/key_awaking_arsino_light.png", "picture/key_amazing_caucasus_light.png");
 //var mySwiper.realIndex = 0;
 
 var threshold = 23;
