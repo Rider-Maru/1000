@@ -120,7 +120,7 @@ function ring() {
         AutorizeNum = 1;
         document.getElementById("key").src = srcsKey[0];
         document.getElementById("key_light").src = srcsKeyLight[0];
-        playSECallKey(mySwiper.realIndex);
+        playSECallKey(0);
         SEstandbyStop();
     }
 }

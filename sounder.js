@@ -156,7 +156,7 @@ function playSECallKey(callNum) {
 
 function playSECallFunction(callNum) {
     stopSE();
-    var num = 1 + callNum * 3;
+    var num = 1;
     nowplaynumKey = num;
     console.log("Function" + num);
     soundArrayKey[nowplaynumKey].connect(analyser);
@@ -165,7 +165,7 @@ function playSECallFunction(callNum) {
 
 function playSECallFinish(callNum) {
     stopSE();
-    var num = 2 + callNum * 3;
+    var num = 2;
     nowplaynumCommon = null;
     nowplaynumKey = num;
     soundArrayKey[num].connect(analyser);
